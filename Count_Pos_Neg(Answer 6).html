@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Positive & Negative Input From User</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+  var positiveInput = 0;
+  var negativeInput = 0;
+  var zeroInput = 0;
+
+  
+  for (var i = 1; i <= 10; i++) {
+
+    let input = parseInt(prompt(`Enter your ${i}th number:`));
+
+    if (input > 0) {
+      positiveInput++;
+    } else if (input < 0) {
+      negativeInput++;
+    } else {
+      zeroInput++;
+    }
+
+    document.write(`<b>${i}th</b> number you have entered: ${input} <br>`);
+    console.log(`${i}th number you have entered: ${input}`);
+
+  }
+
+  document.write(`<br>`);
+
+  console.log("No. of positive inputs you have entered: " + positiveInput);
+  document.write(`No. of <b>positive</b> inputs you have entered: ${positiveInput} <br>`);
+
+  console.log("No. of negative inputs you have entered: " + negativeInput);
+  document.write(`No. of <b>negative</b> inputs you have entered: ${negativeInput} <br>`);
+  
+  console.log("No. of zero inputs you have entered: " + zeroInput);
+  document.write(`No. of <b>zero</b> inputs you have entered: ${zeroInput} <br>`);
+
+    </script>
+
+</body>
+</html>
