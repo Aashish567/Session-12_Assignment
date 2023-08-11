@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Star Pattern</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+    document.write(`Star Pattern <br> <br>`);
+
+    const rows = 5;
+    let i = 1;
+
+    while (i <= rows) {
+
+     let stars = '';
+     let j = 1;
+
+    while (j <= i) {
+    
+     stars += '* ';
+     j++;
+  
+  }
+
+  console.log(stars);
+  i++;
+
+  document.write(`${stars} <br>`);
+}
+
+
+  </script>
+
+</body>
+</html>

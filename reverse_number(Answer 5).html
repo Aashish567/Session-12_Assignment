@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Reverse Input</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+    const userInput = prompt('Enter something:');
+    console.log(`Your have entered: ${userInput}`);
+    document.write(`Your have entered: ${userInput} <br>`);
+
+    const reversedInput = reverseString(userInput);
+    console.log(`Reversed input: ${reversedInput}`);
+    document.write(`Reversed input: ${reversedInput}`);
+
+function reverseString(str) {
+  let reversed = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
+}
+
+    
+  </script>
+
+</body>
+</html>
